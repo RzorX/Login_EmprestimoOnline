@@ -47,9 +47,6 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <form action="login.php" method="post" class="navbar-form navbar-right" role="form">
-                        <div class="form-group" id="emaildiv">
-                        <input type="submit" class="btn btn-success" style="
-                               margin-top: 15px;" id="entrar" name="envia" value="Entrar">
                         <div class="form-group" id="cadastrardiv">
                             <a class="btn btn-primary" href="form.php" role="button" style="margin-top: 15px;"
                                id="cadastrar">Cadastrar</a>
