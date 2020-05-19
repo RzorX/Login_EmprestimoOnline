@@ -20,27 +20,27 @@
     </head>
     <body>
         <?php
-        $nome = isset($_POST["name"]);
-        $cpf = isset($_POST["cpf"]);
-        $rg = isset($_POST["rg"]);
-        $email = isset($_POST["email"]);
-        $pass = isset($_POST["cel"]);
-        $cel = isset($_POST["cel"]);
-        $fixo = isset($_POST["fixo"]);
-        $genero = isset($_POST["genero"]);
-        $nasc = isset($_POST["nasc"]);
-        $cep = isset($_POST["cep"]);
-        $end = isset($_POST["end"]);
-        $num = isset($_POST["num"]);
-        $bairro = isset($_POST["bairro"]);
-        $state = isset($_POST["state"]);
-        $city = isset($_POST["city"]);
-        $comp = isset($_POST["comp"]);
-        $bank = isset($_POST["bank"]);
-        $ag = isset($_POST["ag"]);
-        $conta = isset($_POST["conta"]);
-        $dig = isset($_POST["dig"]);
-        $tyoe = isset($_POST["type"]);
+        $nome = $_POST["name"];
+        $cpf = $_POST["cpf"];
+        $rg = $_POST["rg"];
+        $email = $_POST["email"];
+        $pass = $_POST["cel"];
+        $cel = $_POST["cel"];
+        $fixo = $_POST["fixo"];
+        $genero = $_POST["genero"];
+        $nasc = $_POST["nasc"];
+        $cep = $_POST["cep"];
+        $end = $_POST["end"];
+        $num = $_POST["num"];
+        $bairro = $_POST["bairro"];
+        $state = $_POST["state"];
+        $city = $_POST["city"];
+        $comp = $_POST["comp"];
+        $bank = $_POST["bank"];
+        $ag = $_POST["ag"];
+        $conta = $_POST["conta"];
+        $dig = $_POST["dig"];
+        $tyoe = $_POST["type"];
         ?>
         <a name="home"></a>
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -75,22 +75,19 @@
         </nav>
 
 
-        <div class="login1">
-            <h1 class="telalogin">
-                Login
-            </h1>
-
+        <div class="login1" style="text-align: center; margin-top: 100px">
+            <h2 class="telalogin"> Login             
+            <input type="text" value="<?php echo "$email"?>">
+            </h2>
+            <h2 class="inputsenha"> Senha
+                <input type="password">    
+            </h2>
         </div>
 
         <div class="cadastrosucesso">
-            <h3 class="infocad" style=" text-align: center;
-                margin-top: 100px;
-                color: black;">
-                Ficamos felizes por ter você aqui!!
-            </h3>
             <div class="text-center container">
                 <div class="voltar">
-                    <button class="voltarcad" onclick="window.location = 'index.php'"><strong> Simular um Empréstimo </strong></button>
+                    <button class="voltarcad" onclick="window.location = 'index.php'"><strong> Entrar </strong></button>
                 </div>
             </div>
         </div>
