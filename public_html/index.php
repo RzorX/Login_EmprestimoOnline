@@ -48,14 +48,6 @@
                 <div id="navbar" class="navbar-collapse collapse">
                     <form action="login.php" method="post" class="navbar-form navbar-right" role="form">
                         <div class="form-group" id="emaildiv">
-                            <input type="text" placeholder="Email" class="form-control" style="
-                                   margin-top: 15px;
-                                   width: 226px;" name="login" id="login" required>
-                        </div>
-                        <div class="form-group" id="passdiv">
-                            <input type="password" placeholder="Senha" class="form-control" style="
-                                   margin-top: 15px;" name="pass" id="pass" required>
-                        </div>
                         <input type="submit" class="btn btn-success" style="
                                margin-top: 15px;" id="entrar" name="envia" value="Entrar">
                         <div class="form-group" id="cadastrardiv">
