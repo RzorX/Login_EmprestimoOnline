@@ -19,7 +19,29 @@
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
-
+        <?php
+        $nome = isset($_POST["name"]);
+        $cpf = isset($_POST["cpf"]);
+        $rg = isset($_POST["rg"]);
+        $email = isset($_POST["email"]);
+        $pass = isset($_POST["cel"]);
+        $cel = isset($_POST["cel"]);
+        $fixo = isset($_POST["fixo"]);
+        $genero = isset($_POST["genero"]);
+        $nasc = isset($_POST["nasc"]);
+        $cep = isset($_POST["cep"]);
+        $end = isset($_POST["end"]);
+        $num = isset($_POST["num"]);
+        $bairro = isset($_POST["bairro"]);
+        $state = isset($_POST["state"]);
+        $city = isset($_POST["city"]);
+        $comp = isset($_POST["comp"]);
+        $bank = isset($_POST["bank"]);
+        $ag = isset($_POST["ag"]);
+        $conta = isset($_POST["conta"]);
+        $dig = isset($_POST["dig"]);
+        $tyoe = isset($_POST["type"]);
+        ?>
         <a name="home"></a>
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container">
@@ -51,6 +73,14 @@
                 </div>
             </div>
         </nav>
+
+
+        <div class="login1">
+            <h1 class="telalogin">
+                Login
+            </h1>
+
+        </div>
 
         <div class="cadastrosucesso">
             <h3 class="infocad" style=" text-align: center;
