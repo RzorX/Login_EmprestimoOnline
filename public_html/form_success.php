@@ -24,7 +24,7 @@
         $cpf = $_POST["cpf"];
         $rg = $_POST["rg"];
         $email = $_POST["email"];
-        $pass = $_POST["cel"];
+        $pass = $_POST["pass"];
         $cel = $_POST["cel"];
         $fixo = $_POST["fixo"];
         $genero = $_POST["genero"];
@@ -66,31 +66,29 @@
                         </a></p>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
-                    <form class="navbar-form navbar-right" role="form">
-                        <button type="submit" class="btn btn-success" style="
-                                margin-top: 15px;">Minha Conta</button>
-                    </form>
                 </div>
             </div>
         </nav>
 
-
         <div class="login1" style="text-align: center; margin-top: 100px">
-            <h2 class="telalogin"> Login             
-            <input type="text" value="<?php echo "$email"?>">
-            </h2>
-            <h2 class="inputsenha"> Senha
-                <input type="password">    
-            </h2>
-        </div>
-
-        <div class="cadastrosucesso">
-            <div class="text-center container">
-                <div class="voltar">
-                    <button class="voltarcad" onclick="window.location = 'index.php'"><strong> Entrar </strong></button>
-                </div>
-            </div>
-        </div>
-
-    </body>
+                <?php
+                echo 
+                "<form action='produtos.php' method='post'>
+                <h2 class='telalogin'> Login             
+                    <input type='text' value='$email' id='$emaillogin'>
+                </h2>
+                <h2 class='inputsenha'> Senha
+                    <input name='senhalogin' value='$senhalogin'>    
+                </h2>
+                <input name='logn' type='submit' role='button' value='Entrar'>
+                </div>";
+                
+                echo $emaillogin;
+                $array = array(
+                    'Email' => $$emaillogin,
+                    'Senha' => $$senhalogin
+                );
+                
+                ?>
+            </form>            
 </html>
