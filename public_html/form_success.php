@@ -20,6 +20,8 @@
     </head>
     <body>
         <?php
+        session_start();
+        session_destroy();
         $nome = $_POST["name"];
         $cpf = $_POST["cpf"];
         $rg = $_POST["rg"];

@@ -20,7 +20,6 @@
     </head>
     <body>
         <?php
-        $_GET
         ?>
         <a name="home"></a>
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
