@@ -74,20 +74,16 @@
 
         <div class="login1" style="text-align: center; margin-top: 100px">
             <?php
-            $array = array(
-                'Email' => $emaillogin,
-                'Senha' => $senhalogin
-            );
             echo
             "
                 <h2>É um prazer tê-lo conosco: $nome</h2>
                 <p> Acesse sua seção </p>    
                 <form action='produtos.php' method='post' include='$pass'>
                 <h2 class='telalogin'> Login             
-                    <input type='text' value='$email' name='emaillogin' id='$emaillogin'>
+                    <input type='text' value='$email' name='emaillogin'>
                 </h2>
                 <h2 class='inputsenha'> Senha
-                    <input name='senhalogin' id='$senhalogin'>
+                    <input name='senhalogin'>
                     <input name='senhaold' value='$pass' hidden>    
                 </h2>";
                 echo "<input name='logn' type='submit' role='button' value='Entrar'>
