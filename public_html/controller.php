@@ -1,16 +1,33 @@
 <h1>Controller</h1>
 <?php
+
 class Controller {
+
     private $view;
     private $model;
+
+    public function __construct() {
+        $moduloExterno = $_GET['modulo'];
+        $acaoExterna = $_GET['acao'];
+        $this->view = new View;
+        $this->model = new $moduloExterno;
+        $data = $this->model->$acaoExterna();
+        $this->view->load($moduloExterno, $acaoExterna, $data);
+    }
+
+    public function cadastrar() {
+        
+    }
+
+    public function altera() {
+        
+    }
     
-        public function __construct(){
-            $moduloExterno = $_GET['modulo'];
-            $acaoExterna = $_GET['acao'];
-            $this->view = new View;
-            $this->model = new $moduloExterno;
-            $data = $this->model->$acaoExterna();
-            $this->view->load($moduloExterno,$acaoExterna,$data);
-        }
+    public function deleta() {
+        
+    }
+    
+    public function listar(){
+        
+    }
 }
-?>

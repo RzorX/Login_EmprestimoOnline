@@ -21,6 +21,7 @@
     <body>
         <?php
         session_start();
+        $sessao = session_status() == PHP_SESSION_DISABLED;
         session_destroy();
         $nome = $_POST["name"];
         $cpf = $_POST["cpf"];
@@ -80,15 +81,17 @@
                 <p> Acesse sua seção </p>    
                 <form action='produtos.php' method='post' include='$pass'>
                 <h2 class='telalogin'> Login             
-                    <input type='text' value='$email' name='emaillogin'>
+                    <input type='text' value='$email' name='emaillogin' required>
                 </h2>
                 <h2 class='inputsenha'> Senha
-                    <input name='senhalogin'>
+                    <input name='senhalogin' required>
                     <input name='senhaold' value='$pass' hidden>    
                 </h2>";
-                echo "<input name='logn' type='submit' role='button' value='Entrar'>
+            echo "<input name='logn' type='submit' role='button' value='Entrar'>
                 </div>";
-            
+
+            $_SESSION['email'] = $email;
+            $_SESSION['senha'] = $pass;
             ?>
         </form>            
 </html>
